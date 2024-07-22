@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay-In</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="url-bar">
+                <div class="time">BHARATBHAI</div>
+                <div class="url">IMFA LOAN</div>
+            </div>
+        </header>
+        <main>
+            <div class="pay-in">
+                <h1>Pay-In</h1>
+                <div class="amount">14420.00</div>
+                <div class="upi-id">
+                    <p>UPI ID: <span id="upi">mukarram036@indus</span> <button onclick="copyUPI()">copy</button></p>
+                </div>
+                <div class="utr">
+                    <input type="text" id="utr" placeholder="Enter UTR">
+                    <button onclick="submitUTR()">Submit </button>
+                </div>
+                <div class="tip">
+                    <p>Tip: Don't save the UPI, the UPI changes every hour. Get a new UPI every time.</p>
+                </div>
+                <div class="reminder">
+                    <p>Important reminder: After completing the UPI transaction, please backfill Ref No./UTR No.: UPI Transaction ID/Freecharge: Transaction ID (12 digits).</p>
+                </div>
+            </div>
+        </main>
+        <footer
